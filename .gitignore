@@ -1,0 +1,21 @@
+# Local working notes, archives and scratch. Never published.
+_local/
+
+# Build output. Meshes are rendered from the .scad, not committed.
+*.stl
+*.3mf
+*.amf
+*.off
+*.csg
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

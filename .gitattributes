@@ -1,0 +1,14 @@
+# Normalise text to LF in the repository so diffs stay clean across
+# Windows, macOS and Linux checkouts.
+* text=auto eol=lf
+
+*.scad  text diff
+*.json  text
+*.md    text diff=markdown
+*.py    text diff=python
+
+# Images and meshes are binary. Never touch their line endings.
+*.png   binary
+*.jpg   binary
+*.stl   binary
+*.3mf   binary

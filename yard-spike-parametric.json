@@ -1,0 +1,56 @@
+{
+    "parameterSets": {
+        "Original shape": {
+            "Connector_shape": "square",
+            "Support_free": "false",
+            "Lead_in_chamfer": "0",
+            "Collar_fillet": "0",
+            "Tie_band": "false",
+            "Grip_rings": "0",
+            "Screw_hole": "0",
+            "Fit_clearance": "0"
+        },
+        "Square post 15 mm": {
+            "Connector_shape": "square",
+            "Connector_size": "15",
+            "Connector_depth": "15",
+            "Fit_clearance": "0.2",
+            "Support_free": "true",
+            "Tie_band": "true"
+        },
+        "Round tube 15 mm ID": {
+            "Connector_shape": "circle",
+            "Connector_size": "15",
+            "Connector_depth": "15",
+            "Fit_clearance": "0.3",
+            "Support_free": "true",
+            "Tie_band": "true",
+            "Grip_rings": "2",
+            "Grip_ring_height": "0.3"
+        },
+        "Round tube, screwed through": {
+            "Connector_shape": "circle",
+            "Connector_size": "15",
+            "Connector_depth": "18",
+            "Fit_clearance": "0.35",
+            "Support_free": "true",
+            "Tie_band": "true",
+            "Screw_hole": "3.5",
+            "Grip_rings": "2"
+        },
+        "Heavy duty, rocky ground": {
+            "Connector_shape": "circle",
+            "Connector_size": "15",
+            "Fit_clearance": "0.3",
+            "Support_free": "true",
+            "Spines": "0",
+            "Core_diameter": "8",
+            "Tip_style": "chisel",
+            "Tip_diameter": "3",
+            "Tip_length": "12",
+            "Collar_thickness": "3",
+            "Collar_fillet": "1.5"
+        }
+    },
+    "fileFormatVersion": "1"
+}
