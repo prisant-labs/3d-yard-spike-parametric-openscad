@@ -13,7 +13,7 @@ yard-spike-parametric.scad   the model
 yard-spike-parametric.json   five saved presets, auto-loaded by OpenSCAD
 tools/verify.py              renders every configuration and measures the mesh
 tools/render_images.py       regenerates the pictures in docs/
-docs/                        images used by this README
+docs/                        images used by this README, plus a gallery of variants
 LICENSE                      CC BY-NC 4.0
 ```
 
@@ -24,6 +24,7 @@ The `.scad` and `.json` have to share a stem. That is how OpenSCAD finds the pre
 ## Contents
 
 - [What it makes](#what-it-makes)
+- [Gallery](#gallery)
 - [Quick start](#quick-start)
 - [Requirements](#requirements)
 - [Presets](#presets)
@@ -52,6 +53,30 @@ A spike that drives into soil, with a connector on the other end that plugs into
 - **Guard rails.** Every bad input combination fails with a sentence you can read, not a library assertion.
 
 ![The five saved presets side by side](docs/presets.png)
+
+---
+
+## Gallery
+
+Every picture here is rendered from the current `.scad` by `tools/render_images.py`, so none of them can drift from what the model actually makes.
+
+**Spine count.** Cut off 30 mm up to show the cross section. `Spines = 0` gives a solid taper; 2 to 8 is the useful range.
+
+![Cross sections with 0, 2, 3, 4, 6 and 8 spines](docs/gallery/spines.png)
+
+**Support free mode, seen from below.** With it on, a 45° ramp closes each flute under the collar. With it off, the collar spans the open flutes and the printer has to bridge them.
+
+![Square and round connectors from below with Support_free on and off](docs/gallery/support-free.png)
+
+**Retention hardware.** A tie band across the middle of the connector, grip rings that bite the tube wall, and a teardrop screw hole through the band.
+
+![Round connector bare, with a tie band, with grip rings, and with a screw hole](docs/gallery/retention.png)
+
+**Size.** 9, 15 and 30 mm connectors at the same scale, everything else at its default. The core, spine thickness and taper all follow `Connector_size`.
+
+![9, 15 and 30 mm connectors side by side](docs/gallery/sizes.png)
+
+**Tip profiles** are compared under [design notes](#tip-profiles), and there is a close-up of each preset's connector end in [`docs/gallery/`](docs/gallery/).
 
 ---
 
@@ -392,6 +417,7 @@ Third party: [BOSL2](https://github.com/BelfrySCAD/BOSL2) is included at build t
 
 ### Unreleased
 - Added `LICENSE`, `tools/verify.py`, `tools/render_images.py` and rendered images for the README.
+- Added a gallery of variants: spine counts, support free mode, retention hardware, sizes, and a close-up of each preset. Images are now rendered from an exported mesh, so every face is one colour.
 - README figures re-measured: tip-profile volumes now reflect the default `Support_free = true`, the bridged-area and material-cost figures state which plates they count, and the Original-shape match is qualified to `Roundness = 8`.
 
 ### v5
