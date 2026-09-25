@@ -399,7 +399,7 @@ Good first contributions:
 
 ## License and attribution
 
-This model is a derivative of **"Configurable Spike" by Cobo**, released under Creative Commons Attribution-NonCommercial. <!-- TODO before publishing: link the original listing here, e.g. [Configurable Spike](URL). -->
+This model is a derivative of **"Configurable Spike" by Cobo**, released under Creative Commons Attribution-NonCommercial. <!-- Link to the original listing goes here once located. -->
 
 This repository is licensed under **[CC BY-NC 4.0](LICENSE)**, the same terms. That covers the model, the presets, the helper scripts in `tools/` and the images in `docs/`.
 
